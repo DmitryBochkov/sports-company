@@ -1,0 +1,18 @@
+header .navbar-brand {
+  background: url(../img/global.svg) 15px 0 no-repeat;
+  height: auto;
+  background-size: contain;
+}
+header .navbar-brand h1 {
+  margin: 0;
+  padding-left: 90px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: $secondary-color;
+}
+header .navbar-brand .subhead {
+  display: block;
+  font-family: $basic-font-family;
+  font-size: 0.6em;
+  font-weight: 100;
+}

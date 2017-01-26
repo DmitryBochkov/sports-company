@@ -1,0 +1,21 @@
+.service-card {
+  margin: 20px 0;
+  text-align: center;
+  height: 265px;
+  overflow: hidden;
+}
+.service-card__icon {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.service-card__title {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .service-card__content {
+    padding: 0 15%;
+  }
+}

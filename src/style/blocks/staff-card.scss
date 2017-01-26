@@ -1,0 +1,23 @@
+.staff-card {
+  margin: 20px 0;
+}
+.staff-card__content h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #6f4e36;
+  padding-bottom: 5px;
+}
+.staff-card__content p {
+  font-size: 0.8em;
+}
+.staff-card__photo img {
+  display: block;
+  width: 85%;
+  margin-bottom: 5px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .staff-card__photo img {
+    width: 100%;
+  }
+}

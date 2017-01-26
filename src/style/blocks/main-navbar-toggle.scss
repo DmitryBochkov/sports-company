@@ -1,0 +1,12 @@
+header .navbar-toggle {
+  background: #65A844;
+}
+.navbar-header .navbar-toggle .icon-bar {
+  background: $secondary-color;
+}
+
+@media (max-width: $screen-sm-min) {
+  header .navbar-collapse.in {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

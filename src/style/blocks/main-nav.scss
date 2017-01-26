@@ -1,0 +1,27 @@
+// Navigation
+header .navbar {
+  padding: 30px 0;
+}
+header .navbar-default {
+  background: transparent;
+  border: none;
+}
+header .navbar-default .navbar-nav a {
+  color: $secondary-color;
+  padding: 5px 8px;
+}
+header .navbar-default .navbar-nav a:hover {
+  color: $primary-color;
+}
+header .navbar-default .navbar-nav .active a {
+  color: $primary-color;
+  font-weight: 700;
+  background: transparent;
+  border-bottom: 4px solid $primary-color;
+  text-shadow: none;
+}
+header .navbar-default .navbar-nav .active a:hover {
+  color: #e15d5f;
+  background: transparent;
+  text-shadow: none;
+}

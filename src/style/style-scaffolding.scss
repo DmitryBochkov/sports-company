@@ -1,0 +1,11 @@
+body {
+  font-family: $basic-font-family;
+  font-size: $basic-font-size;
+  font-weight: 300;
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: 100;
+  margin: 0;
+}
