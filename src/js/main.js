@@ -3,6 +3,8 @@ $(document).ready(function() {
   // activate ScrollSpy
 
   var topoffset = 50;
+  var slideQty = $('#featured .item').length;
+  var randSlide = Math.floor(Math.random() * slideQty);
 
   $('body').scrollspy({
     target: 'header .navbar',
@@ -45,14 +47,38 @@ $(document).ready(function() {
   }); //smooth scrolling
 
   // Automatically generate carousel indicators
-  var slideQty = $('#featured .item').length;
 
   for (var i = 0; i < slideQty; i++) {
-    var insertText = '<li data-target="#featured" data-slide-to="' + i + '"></li>';
+    var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
+      if (i === randSlide) {
+        insertText += ' class="active"';
+      }
+      insertText += '></li>';
+
     $('#featured ol').append(insertText);
   }
-  
+
   $('.carousel').carousel({
-    interval: false
+    pause: false
   });
+
+  // carousel-fullheight
+  var windowHeight = $(window).height(); // get the height of the window
+  $('.carousel-fullheight').css('height', windowHeight);
+
+  // replace imgs inside carousels with a bg img
+  $('#featured .item img').each(function() {
+    var imgSrc = $(this).attr('src');
+    $(this).parent().css({'background-image': 'url(' + imgSrc + ')'});
+    $(this).remove();
+  });
+
+  // adjust height of .carousel-fullheight elements on window resize
+  $(window).resize(function() {
+    windowHeight = $(window).height();
+    $('.carousel-fullheight').css('height', windowHeight);
+  });
+
+  // show first slide random
+  $('#featured .item').eq(randSlide).addClass('active');
 });
