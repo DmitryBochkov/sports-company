@@ -6,7 +6,7 @@ header .navbar-brand {
 header .navbar-brand h1 {
   margin: 0;
   padding-left: 90px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 400;
   color: $secondary-color;
 }
@@ -15,4 +15,9 @@ header .navbar-brand .subhead {
   font-family: $basic-font-family;
   font-size: 0.6em;
   font-weight: 100;
+}
+@media (min-width: $screen-lg-min) {
+  header .navbar-brand h1 {
+    font-size: 1.2em;
+  }
 }

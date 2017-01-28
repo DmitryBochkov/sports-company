@@ -1,8 +1,6 @@
 .service-card {
-  margin: 20px 0;
+  margin: 20px 0 30px;
   text-align: center;
-  height: 265px;
-  overflow: hidden;
 }
 .service-card__icon {
   display: block;
@@ -17,5 +15,11 @@
 @media (min-width: 450px) and (max-width: 768px) {
   .service-card__content {
     padding: 0 15%;
+  }
+}
+@media (min-width: $screen-sm-min) {
+  .service-card {
+    height: 265px;
+    overflow: hidden;
   }
 }

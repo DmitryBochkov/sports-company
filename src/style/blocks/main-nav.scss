@@ -7,6 +7,9 @@ header .navbar-default {
   background: transparent;
   border: none;
 }
+header .navbar-nav {
+  font-size: 0.9em;
+}
 header .navbar-default .navbar-nav a {
   color: $secondary-color;
   padding: 5px 8px;
@@ -20,6 +23,10 @@ header .navbar-default .navbar-nav .active a {
   background: transparent;
   border-bottom: 4px solid $primary-color;
   text-shadow: none;
+}
+.navbar-default .navbar-nav > .active > a:focus {
+  color: $primary-color;
+  background: transparent;
 }
 header .navbar-default .navbar-nav .active a:hover {
   color: #e15d5f;
@@ -50,4 +57,10 @@ header .navbar.inbody .navbar-brand h1 {
 }
 header .navbar.inbody .navbar-brand .subhead {
   display: none;
+}
+
+@media (min-width: $screen-lg-min) {
+  header .navbar-nav {
+    font-size: 1.1em;
+  }
 }

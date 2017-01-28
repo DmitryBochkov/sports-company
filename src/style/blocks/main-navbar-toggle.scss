@@ -1,12 +1,19 @@
-header .navbar-toggle {
-  background: #65A844;
+.navbar-default .navbar-toggle {
+  background: #EEC856;
+}
+.navbar-default .navbar-toggle:hover {
+  background: #f6d570;
+}
+.navbar-default .navbar-header .navbar-toggle:active,
+ .navbar-default .navbar-header .navbar-toggle:focus {
+  background: #bf9518;
 }
 .navbar-header .navbar-toggle .icon-bar {
   background: $secondary-color;
 }
 
 @media (max-width: $screen-sm-min) {
-  header .navbar-collapse.in {
-    background: rgba(0, 0, 0, 0.5);
+  nav.navbar {
+    background: rgba(0, 0, 0, 0.7);
   }
 }
